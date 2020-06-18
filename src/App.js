@@ -1,7 +1,4 @@
 import React from 'react';
-//import logo from './logo.svg';
-//import './App.css';
-
 import Categories from './components/categories.js';
 import FederalStates from './components/federalstates.js';
 import Menu from './components/menu.js';
