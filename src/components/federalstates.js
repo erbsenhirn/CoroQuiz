@@ -27,6 +27,7 @@ class FederalStates extends React.Component {
                     <Button 
                         variant="contained" 
                         color="primary" 
+                        fullWidth
                         onClick={() => {this.props.changeToView("menu")}}>
                         Ok
                     </Button>

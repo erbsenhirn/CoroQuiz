@@ -8,7 +8,7 @@ import Container from '@material-ui/core/Container';
 ReactDOM.render(
     <React.StrictMode>
         <Typography>
-            <Container maxWidth="sm">
+            <Container maxWidth="xs">
                 <App />
             </Container>
         </Typography>
