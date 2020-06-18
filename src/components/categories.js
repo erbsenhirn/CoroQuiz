@@ -30,7 +30,7 @@ class Categories extends React.Component {
                         variant="contained" 
                         color="primary" 
                         fullWidth
-                        onClick={() => {this.props.changeToView("federalStates")}}>
+                        onClick={() => {this.props.changeToView("menu")}}>
                         Ok
                     </Button>
                 </Typography>
