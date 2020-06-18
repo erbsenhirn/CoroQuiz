@@ -1,5 +1,6 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
+import Typography from '@material-ui/core/Typography';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -15,7 +16,7 @@ class Categories extends React.Component {
     
     render() {
         return (
-            <Container>
+            <Box>
                 <h1>In Welchen Kategorien möchtest du dein Wissen testen?</h1>
                 <FormGroup>
                     {Object.keys(this.props.categories).map(key => 
@@ -24,13 +25,15 @@ class Categories extends React.Component {
                         } label={key} checked={this.props.categories[key]} />
                     )}
                 </FormGroup>
-                <Button 
-                    variant="contained" 
-                    color="primary" 
-                    onClick={() => {this.props.changeToView("federalStates")}}>
-                    Ok
-                </Button>
-            </Container>
+                <Typography align="center">
+                    <Button 
+                        variant="contained" 
+                        color="primary" 
+                        onClick={() => {this.props.changeToView("federalStates")}}>
+                        Ok
+                    </Button>
+                </Typography>
+            </Box>
         );
     }
 }

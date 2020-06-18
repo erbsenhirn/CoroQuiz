@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Button from '@material-ui/core/Button';
@@ -8,7 +8,7 @@ import Button from '@material-ui/core/Button';
 class Menu extends React.Component {
     render() {
         return (
-            <Container>
+            <Box>
                 <Typography align="center">
                     <h1>CoroQuiz</h1>
                     <h2>Teste dein Wissen über Corona Richtlinien</h2>
@@ -33,7 +33,7 @@ class Menu extends React.Component {
                         </Button>
                     </ButtonGroup>
                 </Typography>
-            </Container>
+            </Box>
         );
     }
 }

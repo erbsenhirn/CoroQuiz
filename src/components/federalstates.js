@@ -1,5 +1,6 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
+import Typography from '@material-ui/core/Typography';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -13,7 +14,7 @@ class FederalStates extends React.Component {
     
     render() {
         return (
-            <Container>
+            <Box>
                 <h1>Für welche Bundesländer möchtest du dein Wissen testen?</h1>
                 <FormGroup>
                     {Object.keys(this.props.federalStates).map(key => 
@@ -22,13 +23,15 @@ class FederalStates extends React.Component {
                         } label={key} checked={this.props.federalStates[key]} />
                     )}
                 </FormGroup>
-                <Button 
-                    variant="contained" 
-                    color="primary" 
-                    onClick={() => {this.props.changeToView("menu")}}>
-                    Ok
-                </Button>
-            </Container>
+                <Typography align="center">
+                    <Button 
+                        variant="contained" 
+                        color="primary" 
+                        onClick={() => {this.props.changeToView("menu")}}>
+                        Ok
+                    </Button>
+                </Typography>
+            </Box>
         );
     }
 }
