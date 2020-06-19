@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from "react-redux";
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import FormGroup from '@material-ui/core/FormGroup';
@@ -6,10 +7,24 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Button from '@material-ui/core/Button';
 
+import { changeToView, toggleFederalState, VIEWS } from '../state';
+
+
+const mapStateToProps = (state) => {
+    return { federalStates: state.federalStates };
+};
+
+function mapDispatchToProps(dispatch) {
+    return {
+        changeToView: (view) => dispatch(changeToView(view)),
+        toggleFederalState: (federalState) => dispatch(toggleFederalState(federalState)),
+    };
+}
+
 class FederalStates extends React.Component {
     
     handleChange = (e) => {
-        this.props.onFederalStateChange(e.target.value, e.target.checked);
+        this.props.toggleFederalState(e.target.value);
     }
     
     render() {
@@ -28,7 +43,7 @@ class FederalStates extends React.Component {
                         variant="contained" 
                         color="primary" 
                         fullWidth
-                        onClick={() => {this.props.changeToView("menu")}}>
+                        onClick={() => {this.props.changeToView(VIEWS.MENU)}}>
                         Ok
                     </Button>
                 </Typography>
@@ -37,4 +52,4 @@ class FederalStates extends React.Component {
     }
 }
 
-export default FederalStates;
+export default connect(mapStateToProps, mapDispatchToProps)(FederalStates);
