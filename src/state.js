@@ -1,9 +1,14 @@
-import { createStore } from "redux";
+import { createStore } from 'redux';
+
+import tasks from './tasks'
+
 
 // Action types
 export const CHANGE_TO_VIEW = "changeToView";
 export const TOGGLE_CATEGORY = "toggleCategory";
 export const TOGGLE_FEDERAL_STATE = "toggleFederalState";
+export const GIVE_ANSWER = "giveAnswer";
+export const END_TASK = "endTask";
 
 export function changeToView(view) {
     return { type: CHANGE_TO_VIEW, view }
@@ -17,10 +22,21 @@ export function toggleFederalState(federalState) {
     return { type: TOGGLE_FEDERAL_STATE, federalState }
 };
 
+export function giveAnswer(answerIndex) {
+    return { type: GIVE_ANSWER, answerIndex }
+};
+
+export function endTask(payload) {
+    return { type: END_TASK, payload}
+};
+
+
+
 export const VIEWS = {
     MENU: "menu",
     CATEGORIES: "categories",
     FEDERAL_STATES: "federalStates",
+    QUIZ: "quiz",
 };
 
 const initialState = {
@@ -44,10 +60,25 @@ const initialState = {
         "Thüringen": false,
     },
     categories: {
-        "Kontaktbeschränkungen": true,
         "Veranstaltungen & Kultur": true,
         "Schulen & Kitas": true,
+        "Gastronomie": true,
+        "Einzelhandel": true,
+        "Kontaktbeschränkungen": true,
+        "Mobilität & Verkehr": true,
+        "Krankenhäuser & Pflege": true,
+        "Sport & Freizeit": true,
+        "Gottesdienste": true,
+        "Einreisen": true,
+        "Hochschulen & Wissenschaft": true,
+        "Verhalten im Verdachtsfall": true,
     },
+    tasks: tasks,
+    numberOfTasks: tasks.length,
+    currentTaskIndex: 0,
+    currentTaskAnswered: false,
+    score: 0,
+    quizFinished: false,
 };
 
 export function rootReducer(state = initialState, action) {
@@ -76,6 +107,33 @@ export function rootReducer(state = initialState, action) {
             return {
             ...state, categories: categories
             };
+            
+        case GIVE_ANSWER:
+            let answerIndex = action.answerIndex;
+            let currentTask = state.tasks[state.currentTaskIndex];
+            currentTask.answerIndex = answerIndex;
+            let tasks = {...state.tasks, currentTask}
+            
+            return {
+                ...state, tasks: tasks, currentTaskAnswered: true
+            }
+            
+        case END_TASK:
+            let currentTaskIndex = state.currentTaskIndex + 1;
+            let currentTaskAnswered = false;
+            let quizFinished = currentTaskIndex >= state.numberOfTasks;
+            let currentView = state.currentView;
+            if (quizFinished) {
+                currentView = VIEWS.MENU;
+            }
+            
+            return {
+                ...state, 
+                currentTaskIndex: currentTaskIndex, 
+                quizFinished: quizFinished,
+                currentTaskAnswered: currentTaskAnswered,
+                currentView: currentView,
+            }
             
         default:
             return state;
