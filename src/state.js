@@ -30,8 +30,6 @@ export function endTask(payload) {
     return { type: END_TASK, payload}
 };
 
-
-
 export const VIEWS = {
     MENU: "menu",
     CATEGORIES: "categories",
@@ -75,6 +73,7 @@ const initialState = {
     },
     tasks: tasks,
     numberOfTasks: tasks.length,
+    currentTask: tasks[0],
     currentTaskIndex: 0,
     currentTaskAnswered: false,
     score: 0,
@@ -110,7 +109,7 @@ export function rootReducer(state = initialState, action) {
             
         case GIVE_ANSWER:
             let answerIndex = action.answerIndex;
-            let currentTask = state.tasks[state.currentTaskIndex];
+            var currentTask = state.currentTask;
             currentTask.answerIndex = answerIndex;
             let tasks = {...state.tasks, currentTask}
             
@@ -120,16 +119,22 @@ export function rootReducer(state = initialState, action) {
             
         case END_TASK:
             let currentTaskIndex = state.currentTaskIndex + 1;
+            var currentTask = state.currentTask;
             let currentTaskAnswered = false;
             let quizFinished = currentTaskIndex >= state.numberOfTasks;
             let currentView = state.currentView;
             if (quizFinished) {
                 currentView = VIEWS.MENU;
+                currentTaskIndex = 0;
+                currentTask = state.tasks[0];
+            } else {
+                currentTask = state.tasks[currentTaskIndex];
             }
             
             return {
                 ...state, 
                 currentTaskIndex: currentTaskIndex, 
+                currentTask: currentTask,
                 quizFinished: quizFinished,
                 currentTaskAnswered: currentTaskAnswered,
                 currentView: currentView,

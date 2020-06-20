@@ -8,27 +8,22 @@ import Explanation from './explanation'
 
 const mapStateToProps = (state) => {
     return { 
-        tasks: state.tasks,
-        numberOfTasks: state.numberOfTasks,
-        currentTaskIndex: state.currentTaskIndex,
-        currentTaskAnswered: state.currentTaskAnswered,
-        score: state.score,
+        currentTask: state.currentTask,
     };
 };
 
 class Quiz extends React.Component {
 
     render() {
-        let currentTask = this.props.tasks[this.props.currentTaskIndex];
         return (
             <Box>
-                <p>{ currentTask.question }</p>
+                <p>{ this.props.currentTask.question }</p>
                 
-                {Object.keys(currentTask.answers).map(key => 
-                    <Answer text={ currentTask.answers[key] } answerIndex={ key }></Answer>
+                {Object.keys(this.props.currentTask.answers).map(key => 
+                    <Answer text={ this.props.currentTask.answers[key] } answerIndex={ key }></Answer>
                 )}
                 
-                <Explanation text={ currentTask.explanation } />              
+                <Explanation text={ this.props.currentTask.explanation } />              
             </Box>
         );
     }

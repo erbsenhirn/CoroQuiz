@@ -7,8 +7,7 @@ import { giveAnswer } from '../state';
 
 const mapStateToProps = (state) => {
     return { 
-        tasks: state.tasks,
-        currentTaskIndex: state.currentTaskIndex,
+        currentTask: state.currentTask,
         currentTaskAnswered: state.currentTaskAnswered,
     };
 };
@@ -22,7 +21,7 @@ function mapDispatchToProps(dispatch) {
 class Answer extends React.Component {
 
     render() {
-        let currentTask = this.props.tasks[this.props.currentTaskIndex];
+        let currentTask = this.props.currentTask;
         let isCorrectAnswer = currentTask.correctAnswerIndex == this.props.answerIndex;
         let hasBeenUncorrectlyChosen = !isCorrectAnswer && currentTask.answerIndex == this.props.answerIndex;
 
