@@ -6,6 +6,7 @@ import Categories from './components/categories.js';
 import FederalStates from './components/federalstates.js';
 import Menu from './components/menu.js';
 import Quiz from './components/quiz.js';
+import Result from './components/result.js'
 
 const mapStateToProps = (state) => {
     return { currentView: state.currentView };
@@ -32,6 +33,11 @@ class App extends React.Component {
             case VIEWS.QUIZ: {
                 return (
                     <Quiz />
+                );
+            }
+            case VIEWS.RESULT: {
+                return (
+                    <Result />
                 );
             }
         }

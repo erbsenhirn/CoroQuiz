@@ -35,6 +35,7 @@ export const VIEWS = {
     CATEGORIES: "categories",
     FEDERAL_STATES: "federalStates",
     QUIZ: "quiz",
+    RESULT: "result",
 };
 
 const initialState = {
@@ -112,9 +113,14 @@ export function rootReducer(state = initialState, action) {
             var currentTask = state.currentTask;
             currentTask.answerIndex = answerIndex;
             let tasks = {...state.tasks, currentTask}
+            let score = state.score;
+            
+            if (currentTask.correctAnswerIndex == answerIndex) {
+                score += 1;
+            }
             
             return {
-                ...state, tasks: tasks, currentTaskAnswered: true
+                ...state, tasks: tasks, currentTaskAnswered: true, score: score,
             }
             
         case END_TASK:
@@ -124,7 +130,8 @@ export function rootReducer(state = initialState, action) {
             let quizFinished = currentTaskIndex >= state.numberOfTasks;
             let currentView = state.currentView;
             if (quizFinished) {
-                currentView = VIEWS.MENU;
+                currentView = VIEWS.RESULT;
+                console.log(currentView);
                 currentTaskIndex = 0;
                 currentTask = state.tasks[0];
             } else {
