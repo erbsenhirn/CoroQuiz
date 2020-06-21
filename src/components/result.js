@@ -32,7 +32,7 @@ class Result extends React.Component {
                     variant="contained" 
                     color="primary" 
                     fullWidth
-                    onClick={() => {this.props.changeToView(VIEWS.RESULT)}}>
+                    onClick={() => {this.props.changeToView(VIEWS.BACKGROUNDINFORMATION)}}>
                     Hintergrundinfos
                 </Button>
                 <Button 

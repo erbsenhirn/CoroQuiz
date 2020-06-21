@@ -6,7 +6,8 @@ import Categories from './components/categories.js';
 import FederalStates from './components/federalstates.js';
 import Menu from './components/menu.js';
 import Quiz from './components/quiz.js';
-import Result from './components/result.js'
+import Result from './components/result.js';
+import BackgroundInformation from './components/backgroundinformation.js'
 
 const mapStateToProps = (state) => {
     return { currentView: state.currentView };
@@ -38,6 +39,11 @@ class App extends React.Component {
             case VIEWS.RESULT: {
                 return (
                     <Result />
+                );
+            }
+            case VIEWS.BACKGROUNDINFORMATION: {
+                return (
+                    <BackgroundInformation />
                 );
             }
         }

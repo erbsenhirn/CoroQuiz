@@ -32,7 +32,7 @@ const tasks = [
             "Clubs und Diskotheken",
         ],
         explanation: "Friseurbetriebe, Kosmetik- und Tattoostudios sowie Massagepraxen sind wieder offen. Seit dem 2. Juni dürfen auch Kneipen und Shisha-Bars wieder bewirten. Dabei müssen Gäste und Bedienung aber Abstands- und Hygieneregeln einhalten.",
-        correctAnswerIndex: 2,
+        correctAnswerIndex: 3,
         answerIndex: -1,
     },
 	{
@@ -55,7 +55,7 @@ const tasks = [
             "Ja, alle Verwandte sowie die Angehörigen des gleichen Haushalts und auch deren Partner dürfen sich in unbegrenzter Zahl zu Hause treffen.",
             "Ja, aber nur, wenn alle Personen dauerhaft in einem Haushalt zusammen wohnen.",
         ],
-        explanation: "Verwandte (Großeltern, Eltern, Kinder, Enkelkinder, Geschwister und deren Nachkommen) sowie die Angehörigen des gleichen Haushalts und auch deren Partner dürfen sich in unbegrenzter Zahl zu Hause treffen..",
+        explanation: "Verwandte (Großeltern, Eltern, Kinder, Enkelkinder, Geschwister und deren Nachkommen) sowie die Angehörigen des gleichen Haushalts und auch deren Partner dürfen sich in unbegrenzter Zahl zu Hause treffen.",
         correctAnswerIndex: 2,
         answerIndex: -1,
     },
@@ -96,7 +96,7 @@ const tasks = [
         answerIndex: -1,
     },
 	{
-        question: "Mt wem darf ich im Restaurant essen gehen??",
+        question: "Mt wem darf ich im Restaurant essen gehen?",
         answers: [
             "Mit einer unbegrenzten Zahl an Personen. Allerdings muss der Betreiber dafür sorgen, dass zwischen allen Gästen ein Mindestabstand von eineinhalb Metern eingehalten werden kann.",
             "Speisegaststätten gelten als öffentlicher Raum. Am Tisch sitzen darf man demnach mit maximal zehn Personen. Mehr dürfen es dann sein, wenn sich zwei Haushalte treffen, die insgesamt mehr als zehn Personen umfassen. Zu allen weiteren Personen muss der Mindestabstand von eineinhalb Metern eingehalten werden.",

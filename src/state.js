@@ -36,6 +36,7 @@ export const VIEWS = {
     FEDERAL_STATES: "federalStates",
     QUIZ: "quiz",
     RESULT: "result",
+	BACKGROUNDINFORMATION: "backgroundinformation",
 };
 
 const initialState = {
