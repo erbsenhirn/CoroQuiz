@@ -32,7 +32,7 @@ const tasks = [
             "Clubs und Diskotheken",
         ],
         explanation: "Friseurbetriebe, Kosmetik- und Tattoostudios sowie Massagepraxen sind wieder offen. Seit dem 2. Juni dürfen auch Kneipen und Shisha-Bars wieder bewirten. Dabei müssen Gäste und Bedienung aber Abstands- und Hygieneregeln einhalten.",
-        correctAnswerIndex: 3,
+        correctAnswerIndex: 2,
         answerIndex: -1,
     },
 	{
@@ -44,7 +44,7 @@ const tasks = [
             "Im öffentlichen Raum darf man sich mit so vielen Personen treffen wie man möchte.",
         ],
         explanation: "Für Familienangehörige gilt die Beschränkung zu Hause nicht. Sobald eine nicht verwandte Person hinzukommt, greift wiederum die Beschränkung auf 20 Personen maximal. In mietbaren Lokalitäten dürfen sich bis zu 99 Personen treffen. Im öffentlichen Raum ist bis zum Ablauf des 30. Juni 2020 ein Aufenthalt nur alleine oder in einer Gruppe mit Angehörigen von bis zu zwei Haushalten oder mit bis zu zehn Personen gestattet. Zu anderen Personen ist ein Mindestabstand von eineinhalb Metern einzuhalten.",
-        correctAnswerIndex: 3,
+        correctAnswerIndex: 2,
         answerIndex: -1,
     },
 	{
@@ -56,7 +56,7 @@ const tasks = [
             "Ja, aber nur, wenn alle Personen dauerhaft in einem Haushalt zusammen wohnen.",
         ],
         explanation: "Verwandte (Großeltern, Eltern, Kinder, Enkelkinder, Geschwister und deren Nachkommen) sowie die Angehörigen des gleichen Haushalts und auch deren Partner dürfen sich in unbegrenzter Zahl zu Hause treffen..",
-        correctAnswerIndex: 3,
+        correctAnswerIndex: 2,
         answerIndex: -1,
     },
 	{
@@ -68,7 +68,7 @@ const tasks = [
             "Es kommt darauf an wie groß die jeweilige Wohnung ist. Dies kann beim lokalen Bezirksamt telefonisch erfragt werden.",
         ],
         explanation: "Auch wenn die Abstandsvorgaben im privaten Raum nicht gelten ist es hier wichtig jegliche Übertragungsmöglichkeiten zu reduzieren, um die Gefahr einer Ansteckung zu reduzieren.",
-        correctAnswerIndex: 2,
+        correctAnswerIndex: 1,
         answerIndex: -1,
     },
 	{
@@ -80,7 +80,7 @@ const tasks = [
             "Nein, im öffentlichen Straßenverkehr gilt grundsätzlich ein Vermummungsverbot, um zu verhindern, dass sich Verkehrssünder und deren Mitfahrer einer von ihnen begangenen Straftat durch einen Widerspruch entziehen können.",
         ],
         explanation: "Die Antwort lautet ja, da Fahrten mit dem privaten Auto grundsätzlich im öffentlichen Raum erfolgen. Allerdings dürften theoretisch zehn Personen (maximal) in einem Auto fahren. Alle Personen im Auto sollten allerdings eine Maske tragen, da sie lange auf engen Raum zusammen sind und so ein besonderes Infektionsrisiko besteht.",
-        correctAnswerIndex: 2,
+        correctAnswerIndex: 1,
         answerIndex: -1,
     },
 	{
@@ -92,7 +92,7 @@ const tasks = [
             "Nein, grundsätzlich muss man in reinen Bankfilialen ohne Verkauf von Produkten keine Maske tragen, darf aber eine tragen.",
         ],
         explanation: "In Banken oder Postfilialen gilt die Maskenpflicht nur, wenn dort im Sinne eines Ladengeschäftes auch Produkte verkauft werden - regelmäßig etwa in Postfilialen. Unabhängig davon ist es grundsätzlich sinnvoll, eine Maske zu tragen, wo immer der Mindestabstand von eineinhalb Metern nicht eingehalten werden kann.",
-        correctAnswerIndex: 4,
+        correctAnswerIndex: 3,
         answerIndex: -1,
     },
 	{
@@ -104,7 +104,7 @@ const tasks = [
             "Essen gehen ist nur mit Personen aus dem eigenen und einem weiteren Haushalt erlaubt. Der Betreiber muss einen Mindestabstand von eineinhalb Metern zwischen allen Gästen gewährleisten.",
         ],
         explanation: "In mietbaren Lokalitäten können bis zu 99 Personen zusammenkommen.",
-        correctAnswerIndex: 2,
+        correctAnswerIndex: 1,
         answerIndex: -1,
     },
 	{
@@ -116,7 +116,7 @@ const tasks = [
             "Nein, die Maskenpflicht in Arztpraxen gilt nur für Patienten, die sich in der Risikogruppe befinden.",
         ],
         explanation: "Es gibt keine generelle Maskenpflicht in Arztpraxen. Allerdings müssen Patienten ab einem Alter von sechs Jahren eine Mund- und Nasenbedeckung beim Zahnarzt oder Physiotherapeuten tragen, wenn dies nicht aus medizinischen oder aus sonstigen zwingenden Gründen unzumutbar ist.",
-        correctAnswerIndex: 1,
+        correctAnswerIndex: 0,
         answerIndex: -1,
     },
 	{
@@ -128,7 +128,7 @@ const tasks = [
             "Nein, aber die Anzahl der Personen im Wasser ist begrenzt. Pro Person sind in Schwimmerbecken zehn Quadratmeter, in Nichtschwimmerbecken vier Quadratmeter vorgesehen. Ausnahmen gelten beispielsweise für Eltern und ihre Kinder.",
         ],
         explanation: "Abweichend hiervon kann die Wasserfläche auch in einzelne Bahnen unterteilt werden, möglichst mit Leinen oder anderen geeigneten Markierungen. Auf einer 50-Meter-Bahn dürfen etwa nur maximal zehn Personen gleichzeitig schwimmen - und pro Bahn immer nur in eine Richtung. Für Liegewiesen und Liegeflächen errechnet sich die maximale Anzahl an Personen, die sich gleichzeitig auf diesen niederlassen dürfen, aus der Gesamtfläche und einer Liegefläche von zehn Quadratmetern pro Person.",
-        correctAnswerIndex: 4,
+        correctAnswerIndex: 3,
         answerIndex: -1,
     },
 	{
@@ -140,7 +140,7 @@ const tasks = [
             "Die 14-tägige häusliche Quarantäne gilt grundsätzlich nur für Berufspendler und Durchreisende.",
         ],
         explanation: "Personen aus Staaten mit einer Neuinfiziertenzahl im Verhältnis zur Bevölkerung von mehr als 50 Fällen pro 100.000 Einwohner kumulativ in den letzten sieben Tagen sind dazu verpflichtet sich unverzüglich nach der Einreise auf direktem Weg in die eigene Häuslichkeit oder eine andere geeignete Unterkunft zu begeben und sich für einen Zeitraum von 14 Tagen nach ihrer Einreise ständig dort abzusondern.",
-        correctAnswerIndex: 3,
+        correctAnswerIndex: 2,
         answerIndex: -1,
     },
 	{
@@ -152,7 +152,7 @@ const tasks = [
             "Bei Ballsportarten ist der Spielball vor und nach jeder Spielzeit gründlich zu desinfizieren.",
         ],
         explanation: "Prinzipiell dürfen seit dem 2. Juni alle öffentlichen und privaten Sportanlagen und Sportstätten wieder öffnen – egal ob drinnen oder draußen. Während des gesamten Trainings und bei allen Übungen muss allerdings ein Abstand von mindestens eineinhalb Metern zu allen anderen Sportlerinnen und Sportlern eingehalten werden. Mehr Nähe darf auch beim Sport nur dann sein, wenn die Personen in gerader Linie verwandt sind, wenn es sich um Geschwister oder deren Nachkommen handelt oder die Personen ohnehin in einem gemeinsamen Haushalt zusammenleben. Für alle anderen Personen ist direkter körperlicher Kontakt untersagt. Seit dem 11. Juni dürfen in Baden-Württemberg Wettbewerbe und Wettkämpfe im Breiten- und Leistungssport ohne Zuschauerinnen und Zuschauer wieder ausgetragen werden.",
-        correctAnswerIndex: 3,
+        correctAnswerIndex: 2,
         answerIndex: -1,
     },
 	{
@@ -164,7 +164,7 @@ const tasks = [
             "Beim Joggen und Radfahren sollte zu anderen Personen ein Abstand von zehn bis zwanzig Metern eingehalten werden.",
         ],
         explanation: "Beim Joggen und Radfahren sollte zu anderen Personen ein Abstand von zehn bis zwanzig Metern eingehalten werden, um während einer körperlichen Betätigung die Ansteckungsgefahr deutlich zu reduzieren.",
-        correctAnswerIndex: 4,
+        correctAnswerIndex: 3,
         answerIndex: -1,
     },
 ];
