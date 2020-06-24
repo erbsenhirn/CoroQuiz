@@ -25,21 +25,24 @@ class Menu extends React.Component {
                             variant="contained" 
                             color="primary" 
                             fullWidth
-                            onClick={() => {this.props.changeToView(VIEWS.QUIZ)}}>
+                            onClick={() => {this.props.changeToView(VIEWS.QUIZ)}}
+                            style={{ textTransform: 'none' }}>
                             Quiz starten
                         </Button>
                         <Button 
                             variant="contained" 
                             color="secondary" 
                             fullWidth
-                            onClick={() => {this.props.changeToView(VIEWS.CATEGORIES)}}>
+                            onClick={() => {this.props.changeToView(VIEWS.CATEGORIES)}}
+                            style={{ textTransform: 'none' }}>
                             Kategorien ändern
                         </Button>
                         <Button 
                             variant="contained" 
                             color="secondary" 
                             fullWidth
-                            onClick={() => {this.props.changeToView(VIEWS.FEDERAL_STATES)}}>
+                            onClick={() => {this.props.changeToView(VIEWS.FEDERAL_STATES)}}
+                            style={{ textTransform: 'none' }}>
                             Bundesländer ändern
                         </Button>
                 </Typography>

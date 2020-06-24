@@ -43,7 +43,8 @@ class FederalStates extends React.Component {
                         variant="contained" 
                         color="primary" 
                         fullWidth
-                        onClick={() => {this.props.changeToView(VIEWS.MENU)}}>
+                        onClick={() => {this.props.changeToView(VIEWS.MENU)}}
+                        style={{ textTransform: 'none' }}>
                         Ok
                     </Button>
                 </Typography>

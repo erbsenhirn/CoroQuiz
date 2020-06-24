@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import HomeIcon from '@material-ui/icons/Home';
 
 import { changeToView, VIEWS } from '../state';
 
@@ -20,10 +22,30 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
+//function Feedback(props) {
+//    const percentageRight = (props.score / props.numberOfTasks) * 100;
+//      if (percentageRight => 0 & percentageRight < 50) {
+//    return "Du solltest dich auf jeden Fall noch mehr über die Regelungen informieren!";
+//  }
+//   else if (percentageRight => 75 & percentageRight <= 100) {
+//    return "Gut gemacht!" + percentageRight;
+//  }
+//   else if (percentageRight => 50 & percentageRight < 75) {
+//    return "Du weißt schon gut Bescheid, aber das geht noch besser!";
+//  }
+//
+//}
+
+
 class Result extends React.Component {
     render() {
         return (
             <Box>
+                  <div>
+                    <IconButton  aria-label="home" onClick={() => {this.props.changeToView(VIEWS.MENU)}}>
+                        <HomeIcon />
+                    </IconButton> 
+                 </div>
                 <Typography
                     align="center">
                     Du hast { this.props.score } von { this.props.numberOfTasks } Fragen richtig beantwortet. Gut gemacht!

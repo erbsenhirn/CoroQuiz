@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import HomeIcon from '@material-ui/icons/Home';
 
 import { changeToView, VIEWS } from '../state';
 
@@ -24,6 +26,11 @@ class BackgroundInformation extends React.Component {
     render() {
         return (
             <Box>
+                <div>
+                    <IconButton  aria-label="home" onClick={() => {this.props.changeToView(VIEWS.MENU)}}>
+                        <HomeIcon />
+                    </IconButton> 
+                 </div>
 				<b>Frage 1:</b> <br/>
                 Du möchtest unbedingt deine beste Freundin Sarah mal wieder treffen. Ist das erlaubt? <br/>
 				<br/>
@@ -210,7 +217,8 @@ class BackgroundInformation extends React.Component {
                     variant="contained" 
                     color="primary" 
                     fullWidth
-                    onClick={() => {this.props.changeToView(VIEWS.MENU)}}>
+                    onClick={() => {this.props.changeToView(VIEWS.MENU)}}
+                    style={{ textTransform: 'none' }}>
                     Zurück zum Menu
                 </Button>
             </Box>

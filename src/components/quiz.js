@@ -12,8 +12,8 @@ import { changeToView, VIEWS } from '../state';
 const mapStateToProps = (state) => {
     return { 
         currentTask: state.currentTask,
-        currentTaskIndex: state.currentTaskIndex,
-        numberOfTasks: state.numberOfTasks,
+        currentTaskIndex: state.currentTaskIndex + 1,
+        numberOfTasks: state.numberOfTasks
     };
 };
 

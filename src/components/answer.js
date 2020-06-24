@@ -40,7 +40,8 @@ class Answer extends React.Component {
                 answerIndex={ this.props.answerIndex }
                 variant="contained" 
                 color={ color }
-                fullWidth>
+                fullWidth
+                style={{ textTransform: 'none' }} >
                 { this.props.text }
             </Button>
         );

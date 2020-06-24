@@ -48,10 +48,10 @@ class Explanation extends React.Component {
                             </Card>
                         </Container>
                     </Modal>
-                    <Button onClick={ this.toggleModal } fullWidth>
+                    <Button onClick={ this.toggleModal } fullWidth style={{ textTransform: 'none' }}>
                         Warum ist das so?
                     </Button>
-                    <Button onClick={ () => { this.props.endTask(null) } } fullWidth>
+                    <Button onClick={ () => { this.props.endTask(null) } } fullWidth style={{ textTransform: 'none' }}>
                         Weiter
                     </Button>
                 </Box>
