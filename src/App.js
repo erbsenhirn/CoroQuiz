@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from "react-redux";
 
-import { VIEWS } from './state'
+import { VIEWS } from './constants'
 import Categories from './components/categories.js';
 import FederalStates from './components/federalstates.js';
 import Menu from './components/menu.js';

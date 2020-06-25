@@ -1,7 +1,7 @@
 import { createStore } from 'redux';
 
+import { VIEWS } from './constants'
 import tasks from './tasks'
-
 
 // Action types
 export const CHANGE_TO_VIEW = "changeToView";
@@ -28,15 +28,6 @@ export function giveAnswer(answerIndex) {
 
 export function endTask(payload) {
     return { type: END_TASK, payload}
-};
-
-export const VIEWS = {
-    MENU: "menu",
-    CATEGORIES: "categories",
-    FEDERAL_STATES: "federalStates",
-    QUIZ: "quiz",
-    RESULT: "result",
-	BACKGROUNDINFORMATION: "backgroundinformation",
 };
 
 const initialState = {

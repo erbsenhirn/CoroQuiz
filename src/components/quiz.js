@@ -1,12 +1,15 @@
 import React from 'react';
 import { connect } from "react-redux";
 import Box from '@material-ui/core/Box';
+import Chip from '@material-ui/core/Chip';
 import IconButton from '@material-ui/core/IconButton';
 import HomeIcon from '@material-ui/icons/Home';
 
 import Answer from './answer'
 import Explanation from './explanation'
-import { changeToView, VIEWS } from '../state';
+import { changeToView } from '../state';
+import { VIEWS } from '../constants'
+
 
 
 const mapStateToProps = (state) => {
@@ -35,8 +38,10 @@ class Quiz extends React.Component {
                         <HomeIcon />
                     </IconButton> 
                  </div>
+                
                  <div style={{ textAlign: 'center' }}>
-                    { this.props.currentTaskIndex }/{ this.props.numberOfTasks }
+                    <p>Frage { this.props.currentTaskIndex } / { this.props.numberOfTasks }</p>
+                    <Chip label={ this.props.currentTask.federalState } variant="outlined" />
                  </div>
             </div>
    

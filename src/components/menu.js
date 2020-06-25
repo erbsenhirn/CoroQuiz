@@ -5,7 +5,9 @@ import Typography from '@material-ui/core/Typography';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Button from '@material-ui/core/Button';
 
-import { changeToView, VIEWS } from '../state';
+import { changeToView } from '../state';
+import { VIEWS } from '../constants'
+
 
 
 function mapDispatchToProps(dispatch) {

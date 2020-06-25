@@ -7,7 +7,9 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Button from '@material-ui/core/Button';
 
-import { changeToView, toggleFederalState, VIEWS } from '../state';
+import { changeToView, toggleFederalState } from '../state';
+import { VIEWS } from '../constants'
+
 
 
 const mapStateToProps = (state) => {

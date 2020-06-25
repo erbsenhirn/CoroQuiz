@@ -6,7 +6,9 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import HomeIcon from '@material-ui/icons/Home';
 
-import { changeToView, VIEWS } from '../state';
+import { changeToView } from '../state';
+import { VIEWS } from '../constants'
+
 
 
 const mapStateToProps = (state) => {

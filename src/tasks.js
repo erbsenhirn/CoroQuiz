@@ -1,3 +1,5 @@
+import { FEDERAL_STATES} from './constants';
+
 const tasks = [
     {
         question: "Du möchtest unbedingt deine beste Freundin Sarah mal wieder treffen. Ist das erlaubt?",
@@ -10,6 +12,7 @@ const tasks = [
         explanation: "Seit 2. Juni dürfen sich zwei Haushalte oder bis zu fünf Personen aus unterschiedlichen Haushalten gemeinsam im öffentlichen Raum aufhalten, müssen allerdings den Mindestabstand von 1,5 Meter wahren.",
         correctAnswerIndex: 1,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BERLIN,
     },
     {
         question: "Du möchtest Freitagabend endlich mal wieder in der Bar abhängen. Geht das?",
@@ -22,6 +25,7 @@ const tasks = [
         explanation: "Gaststätten und Cafés dürfen seit dem 15. Mai zwar wieder öffnen, Bars bleiben jedoch weiterhin geschlossen.",
         correctAnswerIndex: 2,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BERLIN,
     },
     {
         question: "Was muss in Berlin geschlossen bleiben?",
@@ -34,6 +38,7 @@ const tasks = [
         explanation: "Friseurbetriebe, Kosmetik- und Tattoostudios sowie Massagepraxen sind wieder offen. Seit dem 2. Juni dürfen auch Kneipen und Shisha-Bars wieder bewirten. Dabei müssen Gäste und Bedienung aber Abstands- und Hygieneregeln einhalten.",
         correctAnswerIndex: 3,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BERLIN,
     },
 	{
         question: "Wie viele Personen dürfen sich seit dem 10. Juni treffen?",
@@ -46,6 +51,7 @@ const tasks = [
         explanation: "Für Familienangehörige gilt die Beschränkung zu Hause nicht. Sobald eine nicht verwandte Person hinzukommt, greift wiederum die Beschränkung auf 20 Personen maximal. In mietbaren Lokalitäten dürfen sich bis zu 99 Personen treffen. Im öffentlichen Raum ist bis zum Ablauf des 30. Juni 2020 ein Aufenthalt nur alleine oder in einer Gruppe mit Angehörigen von bis zu zwei Haushalten oder mit bis zu zehn Personen gestattet. Zu anderen Personen ist ein Mindestabstand von eineinhalb Metern einzuhalten.",
         correctAnswerIndex: 2,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BRANDENBURG,
     },
 	{
         question: "Dürfen sich Verwandte in unbegrenzter Zahl zu Hause treffen?",
@@ -58,6 +64,7 @@ const tasks = [
         explanation: "Verwandte (Großeltern, Eltern, Kinder, Enkelkinder, Geschwister und deren Nachkommen) sowie die Angehörigen des gleichen Haushalts und auch deren Partner dürfen sich in unbegrenzter Zahl zu Hause treffen.",
         correctAnswerIndex: 2,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BRANDENBURG,
     },
 	{
         question: "Muss der Mindestabstand von eineinhalb Metern auch zu Hause gewahrt werden?",
@@ -70,6 +77,7 @@ const tasks = [
         explanation: "Auch wenn die Abstandsvorgaben im privaten Raum nicht gelten ist es hier wichtig jegliche Übertragungsmöglichkeiten zu reduzieren, um die Gefahr einer Ansteckung zu reduzieren.",
         correctAnswerIndex: 1,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BRANDENBURG,
     },
 	{
         question: "Gelten die Kontaktbeschränkungen im öffentlichen Raum auch für Autofahrten?",
@@ -82,6 +90,7 @@ const tasks = [
         explanation: "Die Antwort lautet ja, da Fahrten mit dem privaten Auto grundsätzlich im öffentlichen Raum erfolgen. Allerdings dürften theoretisch zehn Personen (maximal) in einem Auto fahren. Alle Personen im Auto sollten allerdings eine Maske tragen, da sie lange auf engen Raum zusammen sind und so ein besonderes Infektionsrisiko besteht.",
         correctAnswerIndex: 1,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BRANDENBURG,
     },
 	{
         question: "Gilt die Maskenpflicht auch in Bankfilialen?",
@@ -94,6 +103,7 @@ const tasks = [
         explanation: "In Banken oder Postfilialen gilt die Maskenpflicht nur, wenn dort im Sinne eines Ladengeschäftes auch Produkte verkauft werden - regelmäßig etwa in Postfilialen. Unabhängig davon ist es grundsätzlich sinnvoll, eine Maske zu tragen, wo immer der Mindestabstand von eineinhalb Metern nicht eingehalten werden kann.",
         correctAnswerIndex: 3,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BRANDENBURG,
     },
 	{
         question: "Mt wem darf ich im Restaurant essen gehen?",
@@ -106,6 +116,7 @@ const tasks = [
         explanation: "In mietbaren Lokalitäten können bis zu 99 Personen zusammenkommen.",
         correctAnswerIndex: 1,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BRANDENBURG,
     },
 	{
         question: "Muss man in einer Arztpraxis eine Maske tragen?",
@@ -118,6 +129,7 @@ const tasks = [
         explanation: "Es gibt keine generelle Maskenpflicht in Arztpraxen. Allerdings müssen Patienten ab einem Alter von sechs Jahren eine Mund- und Nasenbedeckung beim Zahnarzt oder Physiotherapeuten tragen, wenn dies nicht aus medizinischen oder aus sonstigen zwingenden Gründen unzumutbar ist.",
         correctAnswerIndex: 0,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BRANDENBURG,
     },
 	{
         question: "Gelten die Abstandsregeln auch im Schwimmbad?",
@@ -130,6 +142,7 @@ const tasks = [
         explanation: "Abweichend hiervon kann die Wasserfläche auch in einzelne Bahnen unterteilt werden, möglichst mit Leinen oder anderen geeigneten Markierungen. Auf einer 50-Meter-Bahn dürfen etwa nur maximal zehn Personen gleichzeitig schwimmen - und pro Bahn immer nur in eine Richtung. Für Liegewiesen und Liegeflächen errechnet sich die maximale Anzahl an Personen, die sich gleichzeitig auf diesen niederlassen dürfen, aus der Gesamtfläche und einer Liegefläche von zehn Quadratmetern pro Person.",
         correctAnswerIndex: 3,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BRANDENBURG,
     },
 	{
         question: "Welche aus dem Ausland einreisenden Personen müssen sich in eine 14-tägige häusliche Quarantäne begeben?",
@@ -142,6 +155,7 @@ const tasks = [
         explanation: "Personen aus Staaten mit einer Neuinfiziertenzahl im Verhältnis zur Bevölkerung von mehr als 50 Fällen pro 100.000 Einwohner kumulativ in den letzten sieben Tagen sind dazu verpflichtet sich unverzüglich nach der Einreise auf direktem Weg in die eigene Häuslichkeit oder eine andere geeignete Unterkunft zu begeben und sich für einen Zeitraum von 14 Tagen nach ihrer Einreise ständig dort abzusondern.",
         correctAnswerIndex: 2,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BRANDENBURG,
     },
 	{
         question: "Welche Regeln gelten beim Kontaktsport?",
@@ -154,6 +168,7 @@ const tasks = [
         explanation: "Prinzipiell dürfen seit dem 2. Juni alle öffentlichen und privaten Sportanlagen und Sportstätten wieder öffnen – egal ob drinnen oder draußen. Während des gesamten Trainings und bei allen Übungen muss allerdings ein Abstand von mindestens eineinhalb Metern zu allen anderen Sportlerinnen und Sportlern eingehalten werden. Mehr Nähe darf auch beim Sport nur dann sein, wenn die Personen in gerader Linie verwandt sind, wenn es sich um Geschwister oder deren Nachkommen handelt oder die Personen ohnehin in einem gemeinsamen Haushalt zusammenleben. Für alle anderen Personen ist direkter körperlicher Kontakt untersagt. Seit dem 11. Juni dürfen in Baden-Württemberg Wettbewerbe und Wettkämpfe im Breiten- und Leistungssport ohne Zuschauerinnen und Zuschauer wieder ausgetragen werden.",
         correctAnswerIndex: 2,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BRANDENBURG,
     },
 	{
         question: "Welchen Mindestabstand sollten Jogger und Radfahrer zu anderen Passanten einhalten?",
@@ -166,6 +181,7 @@ const tasks = [
         explanation: "Beim Joggen und Radfahren sollte zu anderen Personen ein Abstand von zehn bis zwanzig Metern eingehalten werden, um während einer körperlichen Betätigung die Ansteckungsgefahr deutlich zu reduzieren.",
         correctAnswerIndex: 3,
         answerIndex: -1,
+        federalState: FEDERAL_STATES.BRANDENBURG,
     },
 ];
 
