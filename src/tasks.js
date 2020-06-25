@@ -13,6 +13,7 @@ const tasks = [
         correctAnswerIndex: 1,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BERLIN,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
     {
         question: "Du möchtest Freitagabend endlich mal wieder in der Bar abhängen. Geht das?",
@@ -26,6 +27,7 @@ const tasks = [
         correctAnswerIndex: 2,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BERLIN,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
     {
         question: "Was muss in Berlin geschlossen bleiben?",
@@ -39,6 +41,7 @@ const tasks = [
         correctAnswerIndex: 3,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BERLIN,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
         question: "Wie viele Personen dürfen sich seit dem 10. Juni treffen?",
@@ -52,6 +55,7 @@ const tasks = [
         correctAnswerIndex: 2,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BRANDENBURG,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
         question: "Dürfen sich Verwandte in unbegrenzter Zahl zu Hause treffen?",
@@ -65,6 +69,7 @@ const tasks = [
         correctAnswerIndex: 2,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BRANDENBURG,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
         question: "Muss der Mindestabstand von eineinhalb Metern auch zu Hause gewahrt werden?",
@@ -78,6 +83,7 @@ const tasks = [
         correctAnswerIndex: 1,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BRANDENBURG,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
         question: "Gelten die Kontaktbeschränkungen im öffentlichen Raum auch für Autofahrten?",
@@ -91,6 +97,7 @@ const tasks = [
         correctAnswerIndex: 1,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BRANDENBURG,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
         question: "Gilt die Maskenpflicht auch in Bankfilialen?",
@@ -104,6 +111,7 @@ const tasks = [
         correctAnswerIndex: 3,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BRANDENBURG,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
         question: "Mt wem darf ich im Restaurant essen gehen?",
@@ -117,6 +125,7 @@ const tasks = [
         correctAnswerIndex: 1,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BRANDENBURG,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
         question: "Muss man in einer Arztpraxis eine Maske tragen?",
@@ -130,6 +139,7 @@ const tasks = [
         correctAnswerIndex: 0,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BRANDENBURG,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
         question: "Gelten die Abstandsregeln auch im Schwimmbad?",
@@ -143,6 +153,7 @@ const tasks = [
         correctAnswerIndex: 3,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BRANDENBURG,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
         question: "Welche aus dem Ausland einreisenden Personen müssen sich in eine 14-tägige häusliche Quarantäne begeben?",
@@ -156,6 +167,7 @@ const tasks = [
         correctAnswerIndex: 2,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BRANDENBURG,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
         question: "Welche Regeln gelten beim Kontaktsport?",
@@ -169,6 +181,7 @@ const tasks = [
         correctAnswerIndex: 2,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BRANDENBURG,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
         question: "Welchen Mindestabstand sollten Jogger und Radfahrer zu anderen Passanten einhalten?",
@@ -182,6 +195,7 @@ const tasks = [
         correctAnswerIndex: 3,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BRANDENBURG,
+        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 ];
 
