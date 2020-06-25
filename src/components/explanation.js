@@ -2,10 +2,9 @@ import React from 'react';
 import { connect } from "react-redux";
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
-import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import Modal from '@material-ui/core/Modal';
+import Dialog from '@material-ui/core/Dialog';
 
 import { endTask } from '../state';
 
@@ -39,15 +38,13 @@ class Explanation extends React.Component {
         if (this.props.currentTaskAnswered) {
             return (
                 <Box>
-                    <Modal open={ this.state.modalOpen } onClose={ this.toggleModal }>
+                    <Dialog open={ this.state.modalOpen } onClose={ this.toggleModal }>
                         <Container maxWidth="xs">
-                            <Card>
-                                <Typography>
-                                    { this.props.text }
-                                </Typography>
-                            </Card>
+                            <Typography>
+                                { this.props.text }
+                            </Typography>
                         </Container>
-                    </Modal>
+                    </Dialog>
                     <Button onClick={ this.toggleModal } fullWidth style={{ textTransform: 'none' }}>
                         Warum ist das so?
                     </Button>
