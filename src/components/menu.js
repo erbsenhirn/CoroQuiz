@@ -28,7 +28,7 @@ class Menu extends React.Component {
                             color="primary" 
                             fullWidth
                             onClick={() => {this.props.changeToView(VIEWS.QUIZ)}}
-                            style={{ textTransform: 'none' }}>
+                            style={{ textTransform: 'none', marginBottom: 8 }}>
                             Quiz starten
                         </Button>
                         <Button 
@@ -36,7 +36,7 @@ class Menu extends React.Component {
                             color="secondary" 
                             fullWidth
                             onClick={() => {this.props.changeToView(VIEWS.CATEGORIES)}}
-                            style={{ textTransform: 'none' }}>
+                            style={{ textTransform: 'none', marginBottom: 8 }}>
                             Kategorien ändern
                         </Button>
                         <Button 

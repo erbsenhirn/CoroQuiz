@@ -40,8 +40,8 @@ class BackgroundInformation extends React.Component {
                     color="primary" 
                     fullWidth
                     onClick={() => {this.props.changeToView(VIEWS.RESULT)}}
-                    style={{ textTransform: 'none' }}>
-                    Zurück zur Quizausertung
+                    style={{ textTransform: 'none', marginBottom: 8 }}>
+                    Zurück zur Quizauswertung
                 </Button>
                 <Button 
                     variant="contained" 
@@ -71,7 +71,7 @@ class BackgroundInformation extends React.Component {
 			                    fullWidth
 			                    href= { this.props.tasks[key].sourceLink }
 			                    target="_blank"
-			                    style={{ textTransform: 'none' }}>
+			                    style={{ textTransform: 'none', marginTop: 2 }}>
 			                    Link zur Quelle
 			                </Button>
 			            </CardContent>
@@ -82,7 +82,7 @@ class BackgroundInformation extends React.Component {
                     color="primary" 
                     fullWidth
                     onClick={() => {this.props.changeToView(VIEWS.RESULT)}}
-                    style={{ textTransform: 'none' }}>
+                    style={{ textTransform: 'none', marginBottom: 8 }}>
                     Zurück zur Quizauswertung
                 </Button>
                 <Button 
