@@ -13,7 +13,7 @@ const tasks = [
         correctAnswerIndex: 2,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BERLIN,
-        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
+        sourceLink: "https://www.berlin.de/corona/massnahmen/verordnung/",
     },
 	{
         question: "Dürfen sich Verwandte in unbegrenzter Zahl zu Hause treffen?",
@@ -27,7 +27,7 @@ const tasks = [
         correctAnswerIndex: 2,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BERLIN,
-        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
+        sourceLink: "https://www.berlin.de/corona/massnahmen/verordnung/",
     },
 	{
         question: "Muss der Mindestabstand von eineinhalb Metern auch zu Hause gewahrt werden?",
@@ -41,7 +41,7 @@ const tasks = [
         correctAnswerIndex: 1,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BERLIN,
-        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
+        sourceLink: "https://www.berlin.de/corona/massnahmen/verordnung/",
     },
 	{
         question: "Gelten die Kontaktbeschränkungen im öffentlichen Raum auch für Autofahrten?",
@@ -55,7 +55,7 @@ const tasks = [
         correctAnswerIndex: 1,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BRANDENBURG,
-        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
+        sourceLink: "https://www.berlin.de/corona/massnahmen/verordnung/",
     },
 	{
         question: "Gilt die Maskenpflicht auch in Bankfilialen?",
@@ -69,7 +69,7 @@ const tasks = [
         correctAnswerIndex: 3,
         answerIndex: -1,
         federalState: FEDERAL_STATES.BRANDENBURG,
-        sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
+        sourceLink: "https://www.berlin.de/corona/massnahmen/verordnung/",
     },
 ];
 
