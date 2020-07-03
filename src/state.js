@@ -130,9 +130,6 @@ export function rootReducer(state = initialState, action) {
             let currentView = state.currentView;
             if (quizFinished) {
                 currentView = VIEWS.RESULT;
-                console.log(currentView);
-                currentTaskIndex = 0;
-                currentTask = state.tasks[0];
             } else {
                 currentTask = state.tasks[currentTaskIndex];
             }

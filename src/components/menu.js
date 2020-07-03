@@ -5,14 +5,15 @@ import Typography from '@material-ui/core/Typography';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Button from '@material-ui/core/Button';
 
-import { changeToView } from '../state';
+import { resetQuiz, changeToView } from '../state';
 import { VIEWS } from '../constants'
 
 
 
 function mapDispatchToProps(dispatch) {
     return {
-        changeToView: (view) => dispatch(changeToView(view))
+        resetQuiz: () => dispatch(resetQuiz()),
+        changeToView: (view) => dispatch(changeToView(view)),
     };
 }
 
@@ -27,7 +28,11 @@ class Menu extends React.Component {
                             variant="contained" 
                             color="primary" 
                             fullWidth
-                            onClick={() => {this.props.changeToView(VIEWS.QUIZ)}}
+                            onClick={() => {
+                                    this.props.resetQuiz()
+                                    this.props.changeToView(VIEWS.QUIZ)
+                                }
+                            }
                             style={{ textTransform: 'none', marginBottom: 8 }}>
                             Quiz starten
                         </Button>

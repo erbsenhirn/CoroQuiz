@@ -17,7 +17,7 @@ import { VIEWS } from '../constants'
 
 function mapDispatchToProps(dispatch) {
     return {
-        resetQuiz: (view) => dispatch(resetQuiz()),
+        resetQuiz: () => dispatch(resetQuiz()),
         changeToView: (view) => dispatch(changeToView(view)),
     };
 }
