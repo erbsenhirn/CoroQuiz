@@ -3,6 +3,8 @@ import { createStore } from 'redux';
 import { VIEWS } from './constants'
 import tasks from './tasks'
 
+
+
 // Action types
 export const CHANGE_TO_VIEW = "changeToView";
 export const TOGGLE_CATEGORY = "toggleCategory";
