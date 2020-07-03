@@ -11,6 +11,7 @@ export const TOGGLE_CATEGORY = "toggleCategory";
 export const TOGGLE_FEDERAL_STATE = "toggleFederalState";
 export const GIVE_ANSWER = "giveAnswer";
 export const END_TASK = "endTask";
+export const RESET_QUIZ = "resetQuiz";
 
 export function changeToView(view) {
     return { type: CHANGE_TO_VIEW, view }
@@ -30,6 +31,10 @@ export function giveAnswer(answerIndex) {
 
 export function endTask(payload) {
     return { type: END_TASK, payload}
+};
+
+export function resetQuiz() {
+    return { type: RESET_QUIZ }
 };
 
 const initialState = {
@@ -139,6 +144,17 @@ export function rootReducer(state = initialState, action) {
                 quizFinished: quizFinished,
                 currentTaskAnswered: currentTaskAnswered,
                 currentView: currentView,
+            }
+            
+        case RESET_QUIZ:
+            return {
+                ...state, 
+                tasks: tasks,
+                currentTask: tasks[0],
+                currentTaskIndex: 0,
+                currentTaskAnswered: false,
+                score: 0,
+                quizFinished: false,
             }
             
         default:
