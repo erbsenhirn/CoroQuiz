@@ -12,7 +12,7 @@ const tasks = [
         explanation: "Für Familienangehörige gilt die Beschränkung zu Hause nicht. Sobald eine nicht verwandte Person hinzukommt, greift wiederum die Beschränkung auf 20 Personen maximal. In mietbaren Lokalitäten dürfen sich bis zu 99 Personen treffen. Im öffentlichen Raum ist bis zum Ablauf des 30. Juni 2020 ein Aufenthalt nur alleine oder in einer Gruppe mit Angehörigen von bis zu zwei Haushalten oder mit bis zu zehn Personen gestattet. Zu anderen Personen ist ein Mindestabstand von eineinhalb Metern einzuhalten.",
         correctAnswerIndex: 2,
         answerIndex: -1,
-        federalState: FEDERAL_STATES.BRANDENBURG,
+        federalState: FEDERAL_STATES.BERLIN,
         sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
@@ -26,7 +26,7 @@ const tasks = [
         explanation: "Verwandte (Großeltern, Eltern, Kinder, Enkelkinder, Geschwister und deren Nachkommen) sowie die Angehörigen des gleichen Haushalts und auch deren Partner dürfen sich in unbegrenzter Zahl zu Hause treffen.",
         correctAnswerIndex: 2,
         answerIndex: -1,
-        federalState: FEDERAL_STATES.BRANDENBURG,
+        federalState: FEDERAL_STATES.BERLIN,
         sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
@@ -40,7 +40,7 @@ const tasks = [
         explanation: "Auch wenn die Abstandsvorgaben im privaten Raum nicht gelten ist es hier wichtig jegliche Übertragungsmöglichkeiten zu reduzieren, um die Gefahr einer Ansteckung zu reduzieren.",
         correctAnswerIndex: 1,
         answerIndex: -1,
-        federalState: FEDERAL_STATES.BRANDENBURG,
+        federalState: FEDERAL_STATES.BERLIN,
         sourceLink: "https://www.swr.de/swraktuell/baden-wuerttemberg/corona-quiz-100.html",
     },
 	{
