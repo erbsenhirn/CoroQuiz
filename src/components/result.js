@@ -24,19 +24,19 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-//function Feedback(props) {
-//    const percentageRight = (props.score / props.numberOfTasks) * 100;
-//      if (percentageRight => 0 & percentageRight < 50) {
-//    return "Du solltest dich auf jeden Fall noch mehr über die Regelungen informieren!";
-//  }
-//   else if (percentageRight => 75 & percentageRight <= 100) {
-//    return "Gut gemacht!" + percentageRight;
-//  }
-//   else if (percentageRight => 50 & percentageRight < 75) {
-//    return "Du weißt schon gut Bescheid, aber das geht noch besser!";
-//  }
-//
-//}
+function Feedback(props) {
+    const percentageRight = (props.score / props.numberOfTasks) * 100;
+      if (percentageRight => 0 && percentageRight < 50) {
+    return "Du solltest dich auf jeden Fall noch mehr über die Regelungen informieren!" + props.score + " " + props.numberOfTasks + " " + percentageRight;
+  }
+   else if (percentageRight => 50 && percentageRight < 75) {
+    return "Du weißt schon gut Bescheid, aber das geht noch besser!";
+  }
+   else if (percentageRight => 75 && percentageRight <= 100) {
+    return "Gut gemacht!";
+  }
+
+}
 
 
 class Result extends React.Component {
@@ -50,7 +50,7 @@ class Result extends React.Component {
                  </div>
                 <Typography
                     align="center">
-                    Du hast { this.props.score } von { this.props.numberOfTasks } Fragen richtig beantwortet. Gut gemacht!
+                    Du hast { this.props.score } von { this.props.numberOfTasks } Fragen richtig beantwortet. <Feedback score ={this.props.score} numberOfTasks = { this.props.numberOfTasks }  />
                 </Typography>   
                 <Button 
                     variant="contained" 

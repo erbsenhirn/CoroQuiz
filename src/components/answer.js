@@ -41,7 +41,7 @@ class Answer extends React.Component {
                 variant="contained" 
                 color={ color }
                 fullWidth
-                style={{ textTransform: 'none' }} >
+                style={{ textTransform: 'none', marginTop: 2 }} >
                 { this.props.text }
             </Button>
         );
