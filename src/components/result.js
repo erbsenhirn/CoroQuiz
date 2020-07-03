@@ -26,13 +26,13 @@ function mapDispatchToProps(dispatch) {
 
 function Feedback(props) {
     const percentageRight = (props.score / props.numberOfTasks) * 100;
-      if (percentageRight => 0 && percentageRight < 50) {
+      if (percentageRight >= 0 & percentageRight < 50) {
     return "Du solltest dich auf jeden Fall noch mehr über die Regelungen informieren!";
   }
-   else if (percentageRight => 50 && percentageRight < 75) {
+   else if (percentageRight >= 50 && percentageRight < 75) {
     return "Du weißt schon gut Bescheid, aber das geht noch besser!";
   }
-   else if (percentageRight => 75 && percentageRight <= 100) {
+   else if (percentageRight >= 75 && percentageRight <= 100) {
     return "Gut gemacht!";
   }
 
