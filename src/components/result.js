@@ -56,14 +56,16 @@ class Result extends React.Component {
                     variant="contained" 
                     color="primary" 
                     fullWidth
-                    onClick={() => {this.props.changeToView(VIEWS.BACKGROUNDINFORMATION)}}>
+                    onClick={() => {this.props.changeToView(VIEWS.BACKGROUNDINFORMATION)}}
+                    style={{ textTransform: 'none', marginBottom: 8, marginTop: 8 }}>
                     Hintergrundinfos
                 </Button>
                 <Button 
                     variant="contained" 
                     color="primary" 
                     fullWidth
-                    onClick={() => {this.props.changeToView(VIEWS.MENU)}}>
+                    onClick={() => {this.props.changeToView(VIEWS.MENU)}}
+                    style={{ textTransform: 'none', marginBottom: 8 }}>
                     Zurück zum Menu
                 </Button>
             </Box>
