@@ -111,7 +111,7 @@ export function rootReducer(state = initialState, action) {
             let answerIndex = action.answerIndex;
             var currentTask = state.currentTask;
             currentTask.answerIndex = answerIndex;
-            let tasks = {...state.tasks, currentTask}
+            let newTasks = {...state.tasks, currentTask}
             let score = state.score;
             
             if (currentTask.correctAnswerIndex == answerIndex) {
@@ -119,7 +119,7 @@ export function rootReducer(state = initialState, action) {
             }
             
             return {
-                ...state, tasks: tasks, currentTaskAnswered: true, score: score,
+                ...state, tasks: newTasks, currentTaskAnswered: true, score: score,
             }
             
         case END_TASK:
